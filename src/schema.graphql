@@ -1,8 +1,14 @@
-const { GraphQLServer } = require("graphql-yoga");
-const path = require("path");
+type User {
+  id: ID!
+  name: String!
+  email: String!
+}
 
-const server = new GraphQLServer({
- typeDefs: path.resolve(__dirname, "schema.graphql")
-});
+type Query {
+  users: [User!]
+  user(id: ID!): User
+}
 
-server.start();
+type Mutation {
+  createUser(name: String!, email: String!): User
+}
