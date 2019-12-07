@@ -1,0 +1,11 @@
+{
+  "name": "graphQL",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/henriqueholz/graphQL.git",
+  "author": "henrique.castro <henriqueholz@live.com>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^14.5.8"
+  }
+}
